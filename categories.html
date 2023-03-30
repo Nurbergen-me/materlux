@@ -112,6 +112,41 @@
             </div>
         </div>
     </div>
+    <div class="w_mobile_menu">
+        <div class="w_mobile_menu_item">
+            <img src="img/icons/user-icon.svg" alt="user">
+            <span>
+                Войти
+            </span>
+        </div>
+        <div class="w_mobile_menu_item">
+            <img src="img/icons/heart-gray-icon.svg" alt="heart">
+            <span>
+                Избранное
+            </span>
+        </div>
+        <div class="w_mobile_menu_item">
+            <img src="img/icons/dashboard-icon.svg" alt="dashboard">
+            <span>
+                Каталог
+            </span>
+        </div>
+        <div class="w_mobile_menu_item">
+            <img src="img/icons/stat-gray-icon.svg" alt="stat">
+            <span>
+                Сравнение
+            </span>
+        </div>
+        <div class="w_mobile_menu_item">
+            <img src="img/icons/basket-gray-icon.svg" alt="basket">
+            <span>
+                Корзина
+                <div class="w_mobile_menu_item_number">
+                    1
+                </div>
+            </span>
+        </div>
+    </div>
     <section class="w_category" id="category">
         <div class="container">
             <h2 class="w_category_title">
@@ -318,6 +353,10 @@
         <div class="container">
             <div class="w_filters_wrap">
                 <div class="w_filters_sidebar_wrap">
+                    <div class="w_filters_mobile">
+                        <img src="img/icons/filter-gray-icon.svg" alt="filter">
+                        Подбор по параметрам
+                    </div>
                     <div class="w_filters_sidebar">
                         <div class="w_filters_item active">
                             <div class="w_filters_title">
@@ -557,6 +596,12 @@
                         <div class="w_filters_sorts_name">
                             Сортировать:
                         </div>
+                        <select class="w_filters_sorts_select">
+                            <option value="price">По цене</option>
+                            <option value="popularity">По популярности</option>
+                            <option value="reivews">По отзывам</option>
+                            <option value="discount">По размеру скидки</option>
+                        </select>
                         <div class="w_filters_sorts_item">
                             <input type="radio" id="sort-price" value="price" checked name="sort">
                             <label for="sort-price">
@@ -1658,86 +1703,88 @@
                         Оставить отзыв
                     </button>
                 </div>
-                <a href="#" class="w_reviews_item">
-                    <div class="w_reviews_item_header">
-                        <div class="w_reviews_item_person">
-                            <div class="name">
-                                Бесбатченко Олеся
-                            </div>
-                            <div class="stars">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-icon.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w_reviews_item_body">
-                        <img src="img/video.png" alt="video">
-                    </div>
-                    <div class="w_reviews_item_footer">
-                        <img src="img/product-1.png" alt="mattress">
-                        <div class="text">
-                            Матрас STELLA KIDS 90x200
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="w_reviews_item">
-                    <div class="w_reviews_item_header">
-                        <img src="img/user.png" alt="user">
-                        <div class="w_reviews_item_person">
-                            <div class="name">
-                                Бесбатченко Олеся
-                            </div>
-                            <div class="stars">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-icon.svg" alt="">
+                <div class="w_reviews_reviews">
+                    <a href="#" class="w_reviews_item">
+                        <div class="w_reviews_item_header">
+                            <div class="w_reviews_item_person">
+                                <div class="name">
+                                    Бесбатченко Олеся
+                                </div>
+                                <div class="stars">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-icon.svg" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="w_reviews_item_body">
-                        Заказывала нож Амулет, из дамасской стали. Сегодня привезли транспортной компанией. Прекрасный нож, хоть и небольшой, но сделан великолепно! Лезвие острое, клинок притачан к рукоятке без сучка и задоринки, рукоятка отполирована, ложится в руку, как влитая. Заказывала нож Амулет, из дамасской стали. Сегодня привезли транспортной компанией. Прекрасный нож, хоть и небольшой, но сделан великолепно! Лезвие острое, клинок притачан к рукоятке без сучка и задоринки, рукоятка отполирована, ложится в руку, как влитая.
-
-                        <button class="btn w_reviews_item_btn">
-                            Смотреть полный отзыв
-                        </button>
-                    </div>
-                    <div class="w_reviews_item_footer">
-                        <img src="img/product-1.png" alt="mattress">
-                        <div class="text">
-                            Матрас STELLA KIDS 90x200
+                        <div class="w_reviews_item_body">
+                            <img src="img/video.png" alt="video">
                         </div>
-                    </div>
-                </a>
-                <a href="#" class="w_reviews_item">
-                    <div class="w_reviews_item_header">
-                        <div class="w_reviews_item_person">
-                            <div class="name">
-                                Бесбатченко Олеся
-                            </div>
-                            <div class="stars">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-fill-icon.svg" alt="">
-                                <img src="img/icons/star-icon.svg" alt="">
+                        <div class="w_reviews_item_footer">
+                            <img src="img/product-1.png" alt="mattress">
+                            <div class="text">
+                                Матрас STELLA KIDS 90x200
                             </div>
                         </div>
-                    </div>
-                    <div class="w_reviews_item_body">
-                        <img src="img/product-1.png" alt="mattress">
-                    </div>
-                    <div class="w_reviews_item_footer">
-                        <img src="img/product-1.png" alt="mattress">
-                        <div class="text">
-                            Матрас STELLA KIDS 90x200
+                    </a>
+                    <a href="#" class="w_reviews_item">
+                        <div class="w_reviews_item_header">
+                            <img src="img/user.png" alt="user">
+                            <div class="w_reviews_item_person">
+                                <div class="name">
+                                    Бесбатченко Олеся
+                                </div>
+                                <div class="stars">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-icon.svg" alt="">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                        <div class="w_reviews_item_body">
+                            Заказывала нож Амулет, из дамасской стали. Сегодня привезли транспортной компанией. Прекрасный нож, хоть и небольшой, но сделан великолепно! Лезвие острое, клинок притачан к рукоятке без сучка и задоринки, рукоятка отполирована, ложится в руку, как влитая. Заказывала нож Амулет, из дамасской стали. Сегодня привезли транспортной компанией. Прекрасный нож, хоть и небольшой, но сделан великолепно! Лезвие острое, клинок притачан к рукоятке без сучка и задоринки, рукоятка отполирована, ложится в руку, как влитая.
+    
+                            <button class="btn w_reviews_item_btn">
+                                Смотреть полный отзыв
+                            </button>
+                        </div>
+                        <div class="w_reviews_item_footer">
+                            <img src="img/product-1.png" alt="mattress">
+                            <div class="text">
+                                Матрас STELLA KIDS 90x200
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="w_reviews_item">
+                        <div class="w_reviews_item_header">
+                            <div class="w_reviews_item_person">
+                                <div class="name">
+                                    Бесбатченко Олеся
+                                </div>
+                                <div class="stars">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-fill-icon.svg" alt="">
+                                    <img src="img/icons/star-icon.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w_reviews_item_body">
+                            <img src="img/product-1.png" alt="mattress">
+                        </div>
+                        <div class="w_reviews_item_footer">
+                            <img src="img/product-1.png" alt="mattress">
+                            <div class="text">
+                                Матрас STELLA KIDS 90x200
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </secition>
@@ -2157,48 +2204,52 @@
                         </p>
                     </div>
                 </div>
-                <div class="w_contacts_item">
-                    <img src="img/icons/phone-icon.svg" alt="location">
-                    <div class="w_contacts_item_info">
-                        <div class="name">
-                            8 800 500-51-93
+                <div class="w_contacts_phones">
+                    <div class="w_contacts_item">
+                        <img src="img/icons/phone-icon.svg" alt="location">
+                        <div class="w_contacts_item_info">
+                            <div class="name">
+                                8 800 500-51-93
+                            </div>
+                            <a href="#" class="link">
+                                Перезвоните мне
+                            </a>
                         </div>
-                        <a href="#" class="link">
-                            Перезвоните мне
-                        </a>
+                    </div>
+                    <div class="w_contacts_item">
+                        <img src="img/icons/phone-icon.svg" alt="location">
+                        <div class="w_contacts_item_info">
+                            <div class="name">
+                                +7 800 500-51-93
+                            </div>
+                            <a href="#" class="link">
+                                Перезвоните мне
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="w_contacts_item">
-                    <img src="img/icons/phone-icon.svg" alt="location">
-                    <div class="w_contacts_item_info">
-                        <div class="name">
-                            +7 800 500-51-93
-                        </div>
-                        <a href="#" class="link">
-                            Перезвоните мне
-                        </a>
-                    </div>
-                </div>
-                <div class="w_contacts_item">
-                    <img src="img/icons/phone-icon.svg" alt="location">
-                    <div class="w_contacts_item_info">
-                        <div class="name">
-                            sales@materlux.ru
-                        </div>
-                       <p class="text">
-                            Мы на связи!
-                       </p>
-                    </div>
-                </div>
-                <div class="w_contacts_item">
-                    <img src="img/icons/phone-icon.svg" alt="location">
-                    <div class="w_contacts_item_info">
-                        <div class="name">
-                            Пн-Пт
-                        </div>
+                <div class="w_contacts_phones">
+                    <div class="w_contacts_item">
+                        <img src="img/icons/phone-icon.svg" alt="location">
+                        <div class="w_contacts_item_info">
+                            <div class="name">
+                                sales@materlux.ru
+                            </div>
                         <p class="text">
-                            9:00 - 18:00
+                                Мы на связи!
                         </p>
+                        </div>
+                    </div>
+                    <div class="w_contacts_item">
+                        <img src="img/icons/phone-icon.svg" alt="location">
+                        <div class="w_contacts_item_info">
+                            <div class="name">
+                                Пн-Пт
+                            </div>
+                            <p class="text">
+                                9:00 - 18:00
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <button class="btn btn-secondary w_contacts_btn">
