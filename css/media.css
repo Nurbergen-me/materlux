@@ -93,6 +93,28 @@
   .w_cart_body .product-name {
     width: 500px;
   }
+  .w_order .w_cart_body .picture {
+    width: 120px;
+  }
+  .w_order .w_cart_body .product-name {
+    width: 240px;
+    margin-right: 20px;
+  }
+  .w_order .w_cart_body .product-price {
+    width: 160px;
+  }
+  .w_order .w_cart_body .price {
+    font-size: 18px;
+  }
+  .w_order .w_cart_body .old-price {
+    font-size: 12px;
+  }
+  .w_order .w_cart_total {
+    align-items: center;
+  }
+  .w_order .w_cart_total_right {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 1400px) {
   .container {
@@ -207,6 +229,12 @@
   }
   .w_cart_total_right {
     flex-direction: column;
+  }
+  .w_order_summary {
+    display: none;
+  }
+  .w_order_content {
+    width: 100%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -368,6 +396,22 @@
   }
   .w_cart_bonus {
     padding: 24px 20px;
+  }
+  .w_order .w_cart_header_right {
+    gap: 20px;
+  }
+  .w_order .w_payment {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .w_order .w_payment_item {
+    width: 45%;
+  }
+  .w_order .w_cart_product {
+    flex-wrap: nowrap;
+  }
+  .w_order .w_cart_product .product-name {
+    width: 230px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -566,7 +610,7 @@
     gap: 20px;
   }
   .w_cart {
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .w_cart_header {
     flex-wrap: wrap;
@@ -600,5 +644,48 @@
   }
   .w_cart_promo_wrap input, .w_cart_promo_wrap button {
     width: 100%;
+  }
+  .w_order .w_payer {
+    padding: 20px 10px;
+  }
+  .w_order .w_payer_types {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .w_order .w_delivery {
+    padding: 20px 10px;
+  }
+  .w_order .w_delivery_item {
+    flex-wrap: wrap;
+    padding: 30px 10px;
+  }
+  .w_order .w_delivery_item_price {
+    width: 35%;
+    margin-left: 25px;
+  }
+  .w_order .w_payment {
+    padding: 20px 10px;
+  }
+  .w_order .w_payment_item {
+    width: 100%;
+  }
+  .w_order .w_buyer {
+    padding: 20px 10px;
+  }
+  .w_order .w_buyer_input {
+    width: 100%;
+  }
+  .w_order .w_cart_body {
+    padding: 10px;
+  }
+  .w_order .w_cart_body .picture {
+    width: 100%;
+  }
+  .w_order .w_cart_body .product-name {
+    width: 100%;
+  }
+  .w_order .w_cart_product {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=media.css.map */

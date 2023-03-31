@@ -124,6 +124,33 @@
     .w_cart_body .product-name {
         width: 500px;
     }
+    .w_order {
+        .w_cart_body {
+            .picture {
+                width: 120px;
+            }
+            .product-name {
+                width: 240px;
+                margin-right: 20px;
+            }
+            .product-price {
+                width: 160px;
+            }
+
+            .price {
+                font-size: 18px;
+            }
+            .old-price {
+                font-size: 12px;
+            }
+        }
+        .w_cart_total {
+            align-items: center;
+            &_right {
+                flex-direction: column;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1400px) {
     .container {
@@ -275,6 +302,14 @@
         align-items: center;
         &_right {
             flex-direction: column;
+        }
+    }
+    .w_order {
+        &_summary {
+            display: none;
+        }
+        &_content {
+            width: 100%;
         }
     }
 }
@@ -466,6 +501,26 @@
         }
         &_bonus {
             padding: 24px 20px;
+        }
+    }
+    .w_order {
+        .w_cart_header_right {
+            gap: 20px
+        }
+        .w_payment {
+            flex-wrap: wrap;
+            gap: 30px;
+
+            &_item {
+                width: 45%;
+            }
+        }
+        .w_cart_product {
+            flex-wrap: nowrap;
+
+            .product-name {
+                width: 230px;
+            }
         }
     }
 }
@@ -704,7 +759,7 @@
         }
     }
     .w_cart {
-        margin-top: 80px;
+        margin-top: 60px;
 
         &_header {
             flex-wrap: wrap;
@@ -747,6 +802,53 @@
                     width: 100%;
                 }
             }
+        }
+    }
+    .w_order {
+        .w_payer {
+            padding: 20px 10px;
+            &_types {
+                flex-direction: column;
+                gap: 12px;
+                margin-bottom: 20px;
+            }
+        }
+        .w_delivery {
+            padding: 20px 10px;
+            &_item {
+                flex-wrap: wrap;
+                padding: 30px 10px;
+
+                &_price {
+                    width: 35%;
+                    margin-left: 25px;
+                }
+            }
+        }
+        .w_payment {
+            padding: 20px 10px;
+            &_item {
+                width: 100%;
+            }
+        }
+        .w_buyer {
+            padding: 20px 10px;
+            &_input {
+                width: 100%;
+            }
+        }
+        .w_cart_body {
+            padding: 10px;
+
+            .picture {
+                width: 100%;
+            }
+            .product-name {
+                width: 100%;
+            }
+        }
+        .w_cart_product {
+            flex-wrap: wrap;
         }
     }
 }

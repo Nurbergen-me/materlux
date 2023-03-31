@@ -1867,6 +1867,7 @@ input {
   display: flex;
   justify-content: space-between;
   padding: 30px 24px;
+  gap: 20px;
 }
 .w_order .w_delivery_item.active {
   background: #EEF1F8;
