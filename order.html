@@ -147,7 +147,7 @@
             </span>
         </div>
     </div>
-    <section class="w_cart" id="cart">
+    <section class="w_cart w_order" id="cart">
         <div class="container">
             <div class="w_cart_header">
                 <div class="">
@@ -161,11 +161,11 @@
                         </a>
                         <img src="img/icons/arrow-right-icon.svg" alt="arrow">
                         <a href="#" class="w_breacrumb_link">
-                            Корзина
+                            Оформление заказа
                         </a>
                     </div>
                     <h2 class="w_cart_title">
-                        Корзина
+                        Оформление заказа
                     </h2>
                 </div>
                 <div class="w_cart_header_right">
@@ -178,29 +178,68 @@
                     </button>
                 </div>
             </div>
-            <div class="w_cart_total">
-                <div class="w_cart_total_left">
-                    <div class="name">
-                        Итого 218 249 руб.
-                    </div>
-                    <div class="text">
-                        Экономия: 
-                        <span>
-                            9 254 руб.
-                        </span>
+            <div class="w_order_wrap">
+                <div class="w_order_content">
+                    <div class="w_order_box">
+                        <div class="w_order_box_header">
+                            <div class="number">
+                                1
+                            </div>
+                            <div class="name">
+                                Регион доставки
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="w_cart_total_right">
-                    <button class="btn btn-secondary w_cart_btn">
-                        <img src="img/icons/share-icon.svg" alt="share">
-                        Поделиться товарами
-                    </button>
-                    <button class="btn btn-white w_cart_btn">
-                        Быстрый заказ
-                    </button>
-                    <button class="btn w_cart_btn">
-                        Оформить заказ
-                    </button>
+                <div class="w_order_summary">
+                    <div class="w_order_summary_header">
+                        <div class="name">
+                            Ваш заказ
+                        </div>
+                        <button class="edit">
+                            Изменить
+                        </button>
+                    </div>
+                    <div class="w_order_summary_row">
+                        <div class="name">
+                            Товаров на:                          
+                        </div>
+                        <div class="desc">
+                            218 249 руб.
+                        </div>
+                    </div>
+                    <div class="w_order_summary_row">
+                        <div class="name">
+                            Общий вес:                        
+                        </div>
+                        <div class="desc">
+                            96 кг
+                        </div>
+                    </div>
+                    <div class="w_order_summary_row">
+                        <div class="name">
+                            Доставка:                            
+                        </div>
+                        <div class="desc">
+                            <span>Бесплатно</span>
+                        </div>
+                    </div>
+                    <div class="w_order_summary_row last">
+                        <div class="name">
+                            Экономия:                           
+                        </div>
+                        <div class="desc">
+                            <span>9 254 руб.</span>
+                        </div>
+                    </div>
+                    <div class="w_order_summary_footer">
+                        <div class="name">
+                            Итого:
+                        </div>
+                        <div class="total">
+                            218 249 руб.
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="w_cart_body">
@@ -797,90 +836,6 @@
                 <img src="img/icons/refresh-icon.svg" alt="refresh">
                 Загрузить больше
             </button>
-        </div>
-    </section>
-    <section class="w_why" id="w_why">
-        <div class="container">
-            <h2 class="w_why_title section-title">
-                <img src="img/icons/dashboard-black-icon.svg" alt="dashboard">
-                <span>
-                    Почему мы?
-                </span>
-            </h2>
-            <div class="w_why_wrap">
-                <div class="w_why_item">
-                    <div class="w_why_img">
-                        <img src="img/icons/why-shape-1.svg" alt="shape">
-                        <img src="img/icons/why-icon-1.svg" alt="icon">
-                    </div>
-                    <h4 class="w_why_name">
-                        Мы производитель своей продукции
-                    </h4>
-                    <p class="w_why_desc">
-                        Идейные соображения высшего порядка, а также рамки и место обучения кадров способствует подготовки.
-                    </p>
-                </div>
-                <div class="w_why_item">
-                    <div class="w_why_img">
-                        <img src="img/icons/why-shape-2.svg" alt="shape">
-                        <img src="img/icons/why-icon-2.svg" alt="icon">
-                    </div>
-                    <h4 class="w_why_name">
-                        Гарантии лучшего качества
-                    </h4>
-                    <p class="w_why_desc">
-                        Идейные соображения высшего порядка, а также рамки и место обучения кадров способствует подготовки.
-                    </p>
-                </div>
-                <div class="w_why_item">
-                    <div class="w_why_img">
-                        <img src="img/icons/why-shape-3.svg" alt="shape">
-                        <img src="img/icons/why-icon-3.svg" alt="icon">
-                    </div>
-                    <h4 class="w_why_name">
-                        Доставка по всей России
-                    </h4>
-                    <p class="w_why_desc">
-                        Идейные соображения высшего порядка, а также рамки и место обучения кадров способствует подготовки.
-                    </p>
-                </div>
-                <div class="w_why_item">
-                    <div class="w_why_img">
-                        <img src="img/icons/why-shape-4.svg" alt="shape">
-                        <img src="img/icons/why-icon-4.svg" alt="icon">
-                    </div>
-                    <h4 class="w_why_name">
-                        Любые нестандартные размеры
-                    </h4>
-                    <p class="w_why_desc">
-                        Идейные соображения высшего порядка, а также рамки и место обучения кадров способствует подготовки.
-                    </p>
-                </div>
-                <div class="w_why_item">
-                    <div class="w_why_img">
-                        <img src="img/icons/why-shape-5.svg" alt="shape">
-                        <img src="img/icons/why-icon-5.svg" alt="icon">
-                    </div>
-                    <h4 class="w_why_name">
-                        14 лет на рынке
-                    </h4>
-                    <p class="w_why_desc">
-                        Идейные соображения высшего порядка, а также рамки и место обучения кадров способствует подготовки.
-                    </p>
-                </div>
-                <div class="w_why_item">
-                    <div class="w_why_img">
-                        <img src="img/icons/why-shape-6.svg" alt="shape">
-                        <img src="img/icons/why-icon-6.svg" alt="icon">
-                    </div>
-                    <h4 class="w_why_name">
-                        Подарки и скидки
-                    </h4>
-                    <p class="w_why_desc">
-                        Идейные соображения высшего порядка, а также рамки и место обучения кадров способствует подготовки.
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
     <section class="w_promo" id="promo">
