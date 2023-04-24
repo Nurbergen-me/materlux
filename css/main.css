@@ -76,7 +76,6 @@ input {
   background: #fff;
   color: #55626B;
   text-transform: initial;
-  font-size: 14px;
   font-weight: 400;
 }
 
@@ -728,6 +727,9 @@ input {
   width: 378px;
   margin-bottom: 30px;
 }
+.card:hover .card_header_btns {
+  opacity: 1;
+}
 .card_header {
   margin: 20px;
   position: relative;
@@ -772,6 +774,8 @@ input {
   border-radius: 20px;
   padding: 5px 10px;
   color: #fff;
+  font-size: 12px;
+  line-height: 1.15;
 }
 .card_header_promos_item.discount {
   background: #FFDD2D;
@@ -784,6 +788,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  opacity: 0;
 }
 .card_header_btn {
   width: 50px;
@@ -814,12 +819,20 @@ input {
 .card_body_status {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
+}
+.card_body_status span {
+  color: #61D0B0;
+  font-size: 12px;
+  white-space: nowrap;
 }
 .card_body_status .reviews {
   display: flex;
   align-items: center;
   gap: 7px;
+  color: #53585E;
+  font-size: 14px;
 }
 .card_body_info_item {
   display: flex;
@@ -829,6 +842,11 @@ input {
   color: #53585E;
   font-size: 14px;
   margin-bottom: 12px;
+}
+.card_body_info_item .name {
+  background: #fff;
+  margin-bottom: -2px;
+  padding-bottom: 2px;
 }
 .card_body_prices {
   display: flex;
@@ -845,6 +863,7 @@ input {
   font-size: 24px;
   font-weight: 700;
   color: #293235;
+  margin-bottom: 5px;
 }
 .card_body_price .old-price {
   color: #53585E;
@@ -857,10 +876,11 @@ input {
   background: #EB5757;
   color: #fff;
   font-size: 12px;
+  line-height: 15px;
   font-weight: 500;
   padding: 0 3px;
   margin-left: 5px;
-  top: 3px;
+  top: 2px;
 }
 .card_footer {
   background: #EEF1F8;
@@ -1151,6 +1171,8 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 .w_posts_bottom_item.bigger {
   background: url("../img/kid-bg.png") no-repeat center/cover;
@@ -1196,6 +1218,11 @@ input {
   font-weight: 900;
   color: #fff;
   padding: 10px;
+}
+.w_posts_bottom_item .discount_img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .w_posts_bottom_btn.rounded {
   border-radius: 20px;
@@ -1407,7 +1434,7 @@ input {
   cursor: pointer;
 }
 .w_faq_item_header img {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
   transition: 0.5s ease;
 }
 .w_faq_item_body {
@@ -1421,7 +1448,7 @@ input {
   border: none;
 }
 .w_faq_item.active .w_faq_item_header img {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 .w_faq_item.active .w_faq_item_body {
   max-height: 400px;

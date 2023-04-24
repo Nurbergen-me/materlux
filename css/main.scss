@@ -76,7 +76,6 @@ input {
     background: #fff;
     color: #55626B;
     text-transform: initial;
-    font-size: 14px;
     font-weight: 400;
 }
 
@@ -848,6 +847,14 @@ input {
     width: 378px;
     margin-bottom: 30px;
 
+    &:hover {
+        .card {
+            &_header_btns {
+                opacity: 1;
+            }
+        }
+    }
+
     &_header {
         margin: 20px;
         position: relative;
@@ -898,6 +905,8 @@ input {
                 border-radius: 20px;
                 padding: 5px 10px;
                 color: #fff;
+                font-size: 12px;
+                line-height: 1.15;
 
                 &.discount {
                     background: #FFDD2D;
@@ -913,6 +922,7 @@ input {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            opacity: 0;
         }
 
         &_btn {
@@ -949,12 +959,21 @@ input {
         &_status {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             margin-bottom: 20px;
+
+            span {
+                color: #61D0B0;
+                font-size: 12px;
+                white-space: nowrap;
+            }
 
             .reviews {
                 display: flex;
                 align-items: center;
                 gap: 7px;
+                color: #53585E;
+                font-size: 14px;
             }
         }
         &_info {
@@ -966,6 +985,12 @@ input {
                 color: #53585E;
                 font-size: 14px;
                 margin-bottom: 12px;
+
+                .name {
+                    background: #fff;
+                    margin-bottom: -2px;
+                    padding-bottom: 2px;
+                }
             }
         }
 
@@ -987,6 +1012,7 @@ input {
                 font-size: 24px;
                 font-weight: 700;
                 color: #293235;
+                margin-bottom: 5px;
             }
             .old-price {
                 color: #53585E;
@@ -999,10 +1025,11 @@ input {
                     background: #EB5757;
                     color: #fff;
                     font-size: 12px;
+                    line-height: 15px;
                     font-weight: 500;
                     padding: 0 3px;
                     margin-left: 5px;
-                    top: 3px;
+                    top: 2px;
                 }
             }
         }
@@ -1333,6 +1360,8 @@ input {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            position: relative;
+            overflow: hidden;
 
             &.bigger {
                 background: url('../img/kid-bg.png') no-repeat center / cover;
@@ -1386,6 +1415,12 @@ input {
                 font-weight: 900;
                 color: #fff;
                 padding: 10px;
+            }
+
+            .discount_img {
+                position: absolute;
+                top: 0;
+                right: 0;
             }
         }
 
@@ -1629,7 +1664,7 @@ input {
             cursor: pointer;
 
             img {
-                transform: rotate(90deg);
+                transform: rotate(180deg);
                 transition: 0.5s ease;
             }
         }
@@ -1649,7 +1684,7 @@ input {
             .w_faq_item {
                 &_header {
                     img {
-                        transform: rotate(180deg);
+                        transform: rotate(90deg);
                     }
                 }
                 &_body {
